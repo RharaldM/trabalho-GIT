@@ -10,6 +10,8 @@ while True:
     #USUARIO IRÁ INFORMAR A QUANTIDADE DE HORAS TRABALHADAS POR MÊS
 
     hora_trab = int(input("Digite a quantidade de horas que você trabalhou esse mês: "))
+    
+        
 
     
     #SALÁRIO MINIMO E QUANT POR HORA TRABALHADA
@@ -52,7 +54,7 @@ while True:
             sal_pht = sal_pht10
             sal_final = sal_final10
         else:
-            sal_pht = sal_final15
+            sal_pht = sal_pht15
             sal_final = sal_final15
 
         
