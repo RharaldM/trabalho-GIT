@@ -1,25 +1,29 @@
+#LISTA QUE IRÁ RECEBER AS INF. DOS USUÁRIOS
 usuarios = []
-salarios = []
-
-#SALÁRIO MINIMO E QUANT POR HORA TRABALHADA
-sal_min = float(1320.00)
-sal_pht10 = ((sal_min*0.1) + sal_min) / 160
-sal_pht15 = ((sal_min*0.15) + sal_min) / 160
-sal_pht9 = ((sal_min*0.09) + sal_min) / 160
-sal_pht14 = ((sal_min*0.14) + sal_min) / 160
-
-#SALÁRIO FINAL
-sal_final10 = (sal_min*0.1) + sal_min
-sal_final15 = (sal_min*0.15) + sal_min
-sal_final9 = (sal_min*0.09) + sal_min
-sal_final14 = (sal_min*0.14) + sal_min
-
 
 while True:
 
     #NOME DO USUÁRIO
-    nome = ''
+    nom = ''
     nom = input("Nome: ")
+
+    #USUARIO IRÁ INFORMAR A QUANTIDADE DE HORAS TRABALHADAS POR MÊS
+
+    hora_trab = int(input("Digite a quantidade de horas que você trabalhou esse mês: "))
+
+    
+    #SALÁRIO MINIMO E QUANT POR HORA TRABALHADA
+    sal_min = float(1320.00)
+    sal_pht10 = ((sal_min*0.1) + sal_min) / hora_trab
+    sal_pht15 = ((sal_min*0.15) + sal_min) / hora_trab
+    sal_pht9 = ((sal_min*0.09) + sal_min) / hora_trab
+    sal_pht14 = ((sal_min*0.14) + sal_min) / hora_trab
+
+    #SALÁRIO FINAL
+    sal_final10 = (sal_min*0.1) + sal_min
+    sal_final15 = (sal_min*0.15) + sal_min
+    sal_final9 = (sal_min*0.09) + sal_min
+    sal_final14 = (sal_min*0.14) + sal_min
 
     #PERIODO DO USUÁRIO
     periodo = ''
